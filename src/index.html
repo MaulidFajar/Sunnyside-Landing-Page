@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body class="relative font-primary">
+    <header class="absolute w-full mt-7 px-10 font-medium">
+      <nav class="flex items-center justify-between">
+        <div class="logo">
+          <a href=""><img src="images/logo.svg" alt="Sunnyside Logo" /></a>
+        </div>
+        <div class="navbar_wrapper">
+          <button class="hamburger_btn md:hidden p-6">
+            <span class="block w-9 h-1 bg-white"></span>
+            <span class="block w-9 h-1 my-2 bg-white"></span>
+            <span class="block w-9 h-1 bg-white"></span>
+          </button>
+          <ul class="hidden navbar_link md:inline-flex text-white">
+            <li class="nav_link mx-1 p-1">
+              <a href="#" class="nav_item">about</a>
+            </li>
+            <li class="nav_link mx-10 p-1">
+              <a href="#" class="nav_item">services</a>
+            </li>
+            <li class="nav_link mx-1 p-1">
+              <a href="#" class="nav_item">projects</a>
+            </li>
+            <li class="nav_link ml-10 p-1">
+              <a
+                href="#"
+                class="nav_item contact_btn px-6 py-2 pb-3 bg-white font-fraunces text-black rounded-full"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero w-full flex flex-col items-center h-screen bg-img-mobile md:bg-img-desktop bg-bottom md:bg-bottom bg-cover md:bg-contain bg-main bg-no-repeat"
+      >
+        <h1
+          class="font-fraunces text-5xl mt-36 font-black uppercase tracking-2xWide text-white text-center"
+        >
+          We are Creatives
+        </h1>
+        <img
+          src="images/icon-arrow-down.svg"
+          alt="arrow down icon"
+          width="35"
+          class="mt-20"
+        />
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 grid-rows-2">
+        <div class="bg-white pl-32 pr-32 flex flex-col justify-center">
+          <h1
+            class="text-4xl font-fraunces font-black text-desaturated-blue mr-20 mb-7"
+          >
+            Transform your brand
+          </h1>
+          <p
+            class="tracking-tight font-medium text-dark-grayish-blue leading-relaxed"
+          >
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a
+            href=""
+            class="font-fraunces font-black text-sm border-b-2 px-2 mt-7"
+            >LEARN MORE</a
+          >
+        </div>
+        <div class="">
+          <img
+            class="hidden md:block"
+            src="images/desktop/image-transform.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden"
+            src="images/mobile/image-transform.jpg"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            class="hidden md:block"
+            src="images/desktop/image-stand-out.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden"
+            src="images/mobile/image-stand-out.jpg"
+            alt=""
+          />
+        </div>
+        <div class="bg-white pl-32 pr-40 flex flex-col justify-center">
+          <h1
+            class="text-4xl font-fraunces font-black text-desaturated-blue mb-7"
+          >
+            Stand out to the right audience
+          </h1>
+          <p
+            class="tracking-tight font-medium text-dark-grayish-blue mr-2 leading-relaxed"
+          >
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <a
+            href=""
+            class="font-fraunces font-black text-sm border-b-2 px-2 mt-7"
+            >LEARN MORE</a
+          >
+        </div>
+        <div class="relative">
+          <img
+            class="hidden md:block"
+            src="images/desktop/image-graphic-design.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden"
+            src="images/mobile/image-graphic-design.jpg"
+            alt=""
+          />
+          <div
+            class="text-desc text-center absolute bottom-12 mx-40 text-desaturated-cyan"
+          >
+            <h1 class="font-fraunces text-2xl font-black">Graphic Design</h1>
+            <p class="leading-relaxed mt-7 font-medium mx-2">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential client's
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            class="hidden md:block"
+            src="images/desktop/image-photography.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden"
+            src="images/mobile/image-photography.jpg"
+            alt=""
+          />
+          <div
+            class="text-desc text-center absolute bottom-12 mx-40 text-desaturated-blue"
+          >
+            <h1 class="font-fraunces text-2xl font-black">Photography</h1>
+            <p class="leading-relaxed mt-7 font-medium mx-2">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve you business image.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen bg-white flex flex-col justify-center mx-40">
+        <h1
+          class="font-fraunces font-black text-center uppercase tracking-xlWide text-grayish-blue"
+        >
+          Client Testimonials
+        </h1>
+        <div class="cards grid grid-cols-3 mt-20">
+          <div class="card mx-2">
+            <img
+              class="my-0 mx-auto rounded-full"
+              src="images/image-emily.jpg"
+              alt="client testimonial emily"
+              width="60"
+            />
+
+            <p class="text-center">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+
+            <div class="user-profile text-center">
+              <p>Emily R.</p>
+              <span>Marketing Director</span>
+            </div>
+          </div>
+          <div class="card mx-2">
+            <img
+              class="my-0 mx-auto rounded-full"
+              src="images/image-thomas.jpg"
+              alt="client testimonial thomas"
+              width="60"
+            />
+
+            <p class="text-center">
+              Sunnyside's enthusiasm coupled with their keen interest in our
+              brand's success made it a satisfying and enjoyable experience.
+            </p>
+
+            <div class="user-profile text-center">
+              <p>Thomas S.</p>
+              <span>Chief Operating Officer</span>
+            </div>
+          </div>
+          <div class="card mx-2">
+            <img
+              class="my-0 mx-auto rounded-full"
+              src="images/image-jennie.jpg"
+              alt="client testimonial jennie"
+              width="60"
+            />
+
+            <p class="text-center">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+
+            <div class="user-profile text-center">
+              <p>Jennie F.</p>
+              <span>Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1"
+      >
+        <img
+          class="hidden md:block"
+          src="images/desktop/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="md:hidden"
+          src="images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="images/desktop/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="md:hidden"
+          src="images/mobile/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="images/desktop/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="md:hidden"
+          src="images/mobile/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="images/desktop/image-gallery-sugarcubes.jpg"
+          alt=""
+        />
+        <img
+          class="md:hidden"
+          src="images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+        />
+      </section>
+    </main>
+    <footer class="bg-footer">
+      <nav class="text-center">
+        <div class="logo">
+          <img
+            src="images/logo.svg"
+            class="mx-auto text-cyan-600 mask mask-image"
+            alt="Sunnyside Logo"
+          />
+        </div>
+        <div class="navbar_wrapper">
+          <button class="hamburger_btn"></button>
+          <ul class="navbar_link inline-flex">
+            <li class="nav_link mx-1 p-1">
+              <a href="" class="nav_item">about</a>
+            </li>
+            <li class="nav_link mx-1 p-1">
+              <a href="" class="nav_item">service</a>
+            </li>
+            <li class="nav_link mx-1 p-1">
+              <a href="" class="nav_item">projects</a>
+            </li>
+          </ul>
+          <ul class="flex justify-center">
+            <li class="mx-2">
+              <a href=""><img src="images/icon-facebook.svg" alt="" /></a>
+            </li>
+            <li class="mx-2">
+              <a href=""><img src="images/icon-instagram.svg" alt="" /></a>
+            </li>
+            <li class="mx-2">
+              <a href=""><img src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+            <li class="mx-2">
+              <a href=""><img src="images/icon-pinterest.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
