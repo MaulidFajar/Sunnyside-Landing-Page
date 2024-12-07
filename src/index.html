@@ -15,31 +15,36 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body class="relative font-primary">
-    <header class="absolute w-full mt-7 px-10 font-medium">
-      <nav class="flex items-center justify-between">
+    <header class="absolute w-full mt-7 px-5 md:mt-7 md:px-10 font-medium">
+      <nav class="flex items-center justify-between relative">
         <div class="logo">
           <a href=""><img src="images/logo.svg" alt="Sunnyside Logo" /></a>
         </div>
         <div class="navbar_wrapper">
-          <button class="hamburger_btn md:hidden p-6">
-            <span class="block w-9 h-1 bg-white"></span>
-            <span class="block w-9 h-1 my-2 bg-white"></span>
-            <span class="block w-9 h-1 bg-white"></span>
+          <button class="hamburger_btn md:hidden">
+            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-8 h-0.5 my-2 bg-white"></span>
+            <span class="block w-8 h-0.5 bg-white"></span>
           </button>
-          <ul class="hidden navbar_link md:inline-flex text-white">
-            <li class="nav_link mx-1 p-1">
-              <a href="#" class="nav_item">about</a>
+          <ul
+            class="navbar_link hidden absolute md:static left-0 w-full bg-white md:bg-inherit text-center md:inline-flex text-dark-grayish-blue md:text-white p-4 md:p-0 mt-10 md:mt-0"
+          >
+            <div
+              class="md:hidden absolute -top-5 right-5 before:content-[''] before:absolute before:border-l-[20px] before:border-l-transparent before:border-r-[0px] before:border-r-transparent before:border-b-[20px] before:border-b-white"
+            ></div>
+            <li class="nav_link my-4 md:my-0 p-1">
+              <a href="#" class="nav_item">About</a>
             </li>
-            <li class="nav_link mx-10 p-1">
-              <a href="#" class="nav_item">services</a>
+            <li class="nav_link my-3 md:my-0 md:mx-10 p-1">
+              <a href="#" class="nav_item">Services</a>
             </li>
-            <li class="nav_link mx-1 p-1">
-              <a href="#" class="nav_item">projects</a>
+            <li class="nav_link my-4 md:my-0 p-1">
+              <a href="#" class="nav_item">Projects</a>
             </li>
-            <li class="nav_link ml-10 p-1">
+            <li class="nav_link my-6 md:my-0 md:ml-10 p-1">
               <a
                 href="#"
-                class="nav_item contact_btn px-6 py-2 pb-3 bg-white font-fraunces text-black rounded-full"
+                class="nav_item contact_btn px-6 py-3 pb-3 uppercase text-xs bg-link-yellow md:bg-white md:hover:text-white hover:backdrop-blur-sm md:hover:bg-white/30 font-fraunces text-black rounded-full font-extrabold"
                 >contact</a
               >
             </li>
@@ -49,10 +54,10 @@
     </header>
     <main>
       <section
-        class="hero w-full flex flex-col items-center h-screen bg-img-mobile md:bg-img-desktop bg-bottom md:bg-bottom bg-cover md:bg-contain bg-main bg-no-repeat"
+        class="hero w-full flex flex-col items-center h-screen bg-img-mobile md:bg-img-desktop bg-bottom bg-cover md:bg-contain bg-main bg-no-repeat"
       >
         <h1
-          class="font-fraunces text-5xl mt-36 font-black uppercase tracking-2xWide text-white text-center"
+          class="font-fraunces text-4xl md:text-5xl mt-44 md:mt-36 font-black uppercase tracking-2xWide text-white text-center"
         >
           We are Creatives
         </h1>
@@ -63,27 +68,10 @@
           class="mt-20"
         />
       </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 grid-rows-2">
-        <div class="bg-white pl-32 pr-32 flex flex-col justify-center">
-          <h1
-            class="text-4xl font-fraunces font-black text-desaturated-blue mr-20 mb-7"
-          >
-            Transform your brand
-          </h1>
-          <p
-            class="tracking-tight font-medium text-dark-grayish-blue leading-relaxed"
-          >
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a
-            href=""
-            class="font-fraunces font-black text-sm border-b-2 px-2 mt-7"
-            >LEARN MORE</a
-          >
-        </div>
-        <div class="">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2"
+      >
+        <div class="md:col-start-2">
           <img
             class="hidden md:block"
             src="images/desktop/image-transform.jpg"
@@ -94,6 +82,29 @@
             src="images/mobile/image-transform.jpg"
             alt=""
           />
+        </div>
+        <div
+          class="bg-white text-center md:text-start md:pl-32 md:pr-32 flex flex-col justify-center items-start md:col-start-1 md:row-start-1 relative px-9 md:px-0"
+        >
+          <h1
+            class="text-3xl md:text-4xl font-fraunces font-black text-desaturated-blue md:mr-20 mb-7"
+          >
+            Transform your brand
+          </h1>
+          <p
+            class="md:tracking-tight font-medium text-dark-grayish-blue leading-relaxed"
+          >
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <div class="relative mt-7 mx-auto md:mx-0">
+            <a
+              href=""
+              class="font-fraunces font-black text-sm before:content-[''] before:absolute before:w-28 before:h-1 before:left-1 before:bottom-0 before:py-1 before:rounded-full before:bg-link-yellow/30 hover:before:bg-link-yellow hover:before:absolute px-2"
+              >LEARN MORE</a
+            >
+          </div>
         </div>
         <div class="">
           <img
@@ -107,24 +118,28 @@
             alt=""
           />
         </div>
-        <div class="bg-white pl-32 pr-40 flex flex-col justify-center">
+        <div
+          class="bg-white text-center md:text-start md:pl-32 md:pr-40 px-10 flex flex-col justify-center items-start py-5 md:py-0"
+        >
           <h1
-            class="text-4xl font-fraunces font-black text-desaturated-blue mb-7"
+            class="text-3xl md:text-4xl font-fraunces font-black text-desaturated-blue mb-7"
           >
             Stand out to the right audience
           </h1>
           <p
-            class="tracking-tight font-medium text-dark-grayish-blue mr-2 leading-relaxed"
+            class="md:tracking-tight font-medium text-dark-grayish-blue md:mr-2 leading-relaxed"
           >
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we'll build and
             extend your brand in digital places.
           </p>
-          <a
-            href=""
-            class="font-fraunces font-black text-sm border-b-2 px-2 mt-7"
-            >LEARN MORE</a
-          >
+          <div class="relative mt-7 mb-5 md:mb-0 mx-auto md:mx-0">
+            <a
+              href=""
+              class="font-fraunces font-black text-sm before:content-[''] before:absolute before:w-28 before:h-1 before:left-1 before:bottom-0 before:py-1 before:rounded-full before:bg-link-red/30 hover:before:bg-link-red hover:before:absolute px-2"
+              >LEARN MORE</a
+            >
+          </div>
         </div>
         <div class="relative">
           <img
@@ -138,9 +153,11 @@
             alt=""
           />
           <div
-            class="text-desc text-center absolute bottom-12 mx-40 text-desaturated-cyan"
+            class="text-desc text-center absolute bottom-12 mx-2 md:mx-40 text-desaturated-cyan"
           >
-            <h1 class="font-fraunces text-2xl font-black">Graphic Design</h1>
+            <h1 class="font-fraunces text-3xl md:text-2xl font-black">
+              Graphic Design
+            </h1>
             <p class="leading-relaxed mt-7 font-medium mx-2">
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential client's
@@ -160,9 +177,11 @@
             alt=""
           />
           <div
-            class="text-desc text-center absolute bottom-12 mx-40 text-desaturated-blue"
+            class="text-desc text-center absolute bottom-12 mx-2 md:mx-40 text-desaturated-blue"
           >
-            <h1 class="font-fraunces text-2xl font-black">Photography</h1>
+            <h1 class="font-fraunces text-3xl md:text-2xl font-black">
+              Photography
+            </h1>
             <p class="leading-relaxed mt-7 font-medium mx-2">
               Increase your credibility by getting the most stunning,
               high-quality photos that improve you business image.
@@ -170,14 +189,16 @@
           </div>
         </div>
       </section>
-      <section class="h-screen bg-white flex flex-col justify-center mx-40">
+      <section
+        class="md:h-screen bg-white flex flex-col md:justify-center mx-4 md:mx-40 py-14"
+      >
         <h1
           class="font-fraunces font-black text-center uppercase tracking-xlWide text-grayish-blue"
         >
           Client Testimonials
         </h1>
-        <div class="cards grid grid-cols-3 mt-20">
-          <div class="card mx-2">
+        <div class="cards grid grid-cols-1 md:grid-cols-3 mt-14 md:mt-20">
+          <div class="card mx-2 px-2">
             <img
               class="my-0 mx-auto rounded-full"
               src="images/image-emily.jpg"
@@ -185,17 +206,21 @@
               width="60"
             />
 
-            <p class="text-center">
+            <p class="text-center font-medium text-dark-blue mt-10">
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </p>
 
-            <div class="user-profile text-center">
-              <p>Emily R.</p>
-              <span>Marketing Director</span>
+            <div class="user-profile text-center mt-5">
+              <p class="font-fraunces font-black text-desaturated-blue text-sm">
+                Emily R.
+              </p>
+              <span class="text-xs font-medium text-dark-grayish-blue"
+                >Marketing Director</span
+              >
             </div>
           </div>
-          <div class="card mx-2">
+          <div class="card mx-2 px-2 mt-14 md:mt-0">
             <img
               class="my-0 mx-auto rounded-full"
               src="images/image-thomas.jpg"
@@ -203,17 +228,21 @@
               width="60"
             />
 
-            <p class="text-center">
+            <p class="text-center font-medium text-dark-blue mt-10">
               Sunnyside's enthusiasm coupled with their keen interest in our
               brand's success made it a satisfying and enjoyable experience.
             </p>
 
-            <div class="user-profile text-center">
-              <p>Thomas S.</p>
-              <span>Chief Operating Officer</span>
+            <div class="user-profile text-center mt-5">
+              <p class="font-fraunces font-black text-desaturated-blue text-sm">
+                Thomas S.
+              </p>
+              <span class="text-xs font-medium text-dark-grayish-blue"
+                >Chief Operating Officer</span
+              >
             </div>
           </div>
-          <div class="card mx-2">
+          <div class="card mx-2 px-2 mt-14 md:mt-0">
             <img
               class="my-0 mx-auto rounded-full"
               src="images/image-jennie.jpg"
@@ -221,14 +250,18 @@
               width="60"
             />
 
-            <p class="text-center">
+            <p class="text-center font-medium text-dark-blue mt-10">
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </p>
 
-            <div class="user-profile text-center">
-              <p>Jennie F.</p>
-              <span>Business Owner</span>
+            <div class="user-profile text-center mt-5">
+              <p class="font-fraunces font-black text-desaturated-blue text-sm">
+                Jennie F.
+              </p>
+              <span class="text-xs font-medium text-dark-grayish-blue"
+                >Business Owner</span
+              >
             </div>
           </div>
         </div>
@@ -278,40 +311,61 @@
         />
       </section>
     </main>
-    <footer class="bg-footer">
+    <footer class="bg-footer font-medium text-moderate-cyan">
       <nav class="text-center">
-        <div class="logo">
+        <div class="logo pt-12">
           <img
-            src="images/logo.svg"
-            class="mx-auto text-cyan-600 mask mask-image"
+            src="images/footer-logo.svg"
+            class="mx-auto"
             alt="Sunnyside Logo"
+            width="140"
           />
         </div>
         <div class="navbar_wrapper">
           <button class="hamburger_btn"></button>
-          <ul class="navbar_link inline-flex">
-            <li class="nav_link mx-1 p-1">
-              <a href="" class="nav_item">about</a>
+          <ul class="navbar_link inline-flex text-sm mt-10">
+            <li class="nav_link mx-1">
+              <a href="" class="nav_item hover:text-white">About</a>
             </li>
-            <li class="nav_link mx-1 p-1">
-              <a href="" class="nav_item">service</a>
+            <li class="nav_link mx-1 px-11">
+              <a href="" class="nav_item hover:text-white">Services</a>
             </li>
-            <li class="nav_link mx-1 p-1">
-              <a href="" class="nav_item">projects</a>
+            <li class="nav_link mx-1">
+              <a href="" class="nav_item hover:text-white">Projects</a>
             </li>
           </ul>
-          <ul class="flex justify-center">
-            <li class="mx-2">
-              <a href=""><img src="images/icon-facebook.svg" alt="" /></a>
+          <ul class="flex justify-center mt-16 pb-12">
+            <li class="mx-3">
+              <a href="https://www.facebook.com"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt="sunnyside company facebook profile"
+                  width="17"
+              /></a>
             </li>
-            <li class="mx-2">
-              <a href=""><img src="images/icon-instagram.svg" alt="" /></a>
+            <li class="mx-3">
+              <a href="https://www.instagram.com"
+                ><img
+                  src="images/icon-instagram.svg"
+                  alt="sunnyside company instagram profile"
+                  width="17"
+              /></a>
             </li>
-            <li class="mx-2">
-              <a href=""><img src="images/icon-twitter.svg" alt="" /></a>
+            <li class="mx-3">
+              <a href="https://www.x.com"
+                ><img
+                  src="images/icon-twitter.svg"
+                  alt="sunnyside company twitter profile"
+                  width="17"
+              /></a>
             </li>
-            <li class="mx-2">
-              <a href=""><img src="images/icon-pinterest.svg" alt="" /></a>
+            <li class="mx-3">
+              <a href="https://www.pinterest.com"
+                ><img
+                  src="images/icon-pinterest.svg"
+                  alt="sunnyside company pinterest gallery profile"
+                  width="17"
+              /></a>
             </li>
           </ul>
         </div>

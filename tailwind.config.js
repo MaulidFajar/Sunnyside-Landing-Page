@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         footer: "hsl(168, 43%, 70%)",
         main: "hsl(200, 100%, 62%)",
+        "link-yellow": "hsl(51, 100%, 49%)",
+        "link-red": "hsl(7, 99%, 70%)",
       },
       textColor: {
         "soft-red": "hsl(7, 99%, 70%);",
