@@ -34,6 +34,6 @@ module.exports = {
         "2xWide": "10px",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
